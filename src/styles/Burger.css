@@ -6,8 +6,10 @@
     height: 2rem;  
 }
 
-/* .burger {
-    width: 100%;
-    text-align: center;
-    margin-top: 10%;
-} */
+@media (max-width: 900px) {
+    .burger {
+        width: 85%;
+        margin-left: 10%;
+    }
+}
+    

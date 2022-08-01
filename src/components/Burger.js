@@ -6,16 +6,16 @@ import Tomato from './Tomato'
 import TopBread from './TopBread'
 import '../styles/Burger.css'
 
-export default function Burger({tomato, meat, lettuce, createBurger}) {
+export default function Burger({tomato, meat, lettuce}) {
 
-    console.log("what is create burger ", createBurger)
   return (
     <div className='burger'>
 
         <TopBread />
-        {tomato && <Tomato />}
-        {meat && <Meat />}
-        {lettuce && <Lettuce/> }
+        {/* { !tomato && !meat && !lettuce && <br></br> } */}
+        {tomato && <Tomato color="red"/>}
+        {meat && <Meat color="brown"/>}
+        {lettuce && <Lettuce color="green"/> }
         <BaseBread />
 
     </div>

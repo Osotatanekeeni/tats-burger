@@ -1,5 +1,13 @@
 .burger {
+    width: 30%;
+    margin-top: 5%;
+    margin-left: 35%;
+    
+    height: 2rem;  
+}
+
+/* .burger {
     width: 100%;
     text-align: center;
     margin-top: 10%;
-}
+} */

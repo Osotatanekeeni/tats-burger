@@ -19,27 +19,24 @@ export default function Ingredients() {
     const [tomatoIsChecked, setTomatoIsChecked] = useState(false);
     const [meatIsChecked, setMeatIsChecked] = useState(false);
     const [lettuceIsChecked, setLettuceIsChecked] = useState(false);
-    const [createBurger, setCreateBurger] = useState(false);
 
-
-    function handleCreateBurger() {
-        setCreateBurger(true);
-    }
   return (
+    <>
     <div className='list'>
-    <label>
-      <input type="checkbox" checked={tomatoIsChecked} onChange={handleTomatoClick}/>
-      Tomato
-    </label>
-    <label>
-      <input type="checkbox" checked={meatIsChecked} onChange={handleMeatClick} />
-      Meat
-    </label>
+        <label>
+        <input type="checkbox" checked={tomatoIsChecked} onChange={handleTomatoClick}/>
+        Tomato
+        </label>
+        <label>
+        <input type="checkbox" checked={meatIsChecked} onChange={handleMeatClick} />
+        Meat
+        </label>
 
-    <label>
-      <input type="checkbox" checked={lettuceIsChecked} onChange={handleLettuceClick} />
-      Lettuce
-    </label>
+        <label>
+        <input type="checkbox" checked={lettuceIsChecked} onChange={handleLettuceClick} />
+        Lettuce
+        </label>
+    </div>
 
     
     {/* {tomatoIsChecked || meatIsChecked || lettuceIsChecked ? 
@@ -57,7 +54,7 @@ export default function Ingredients() {
 
     {/* {createBurger ? <Burger tomato={tomatoIsChecked} meat={meatIsChecked} lettuce={lettuceIsChecked} createBurger={createBurger} /> : null} */}
 
-    <Burger tomato={tomatoIsChecked} meat={meatIsChecked} lettuce={lettuceIsChecked} createBurger={createBurger} />
-    </div>
+    <Burger tomato={tomatoIsChecked} meat={meatIsChecked} lettuce={lettuceIsChecked}/>
+    </>
   )
 }

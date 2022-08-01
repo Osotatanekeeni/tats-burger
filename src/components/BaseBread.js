@@ -1,7 +1,8 @@
 import React from 'react'
+import '../styles/BaseBread.css'
 
 export default function BaseBread() {
   return (
-    <div>BaseBread</div>
+    <div className='base-bread'></div>
   )
 }

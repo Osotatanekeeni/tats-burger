@@ -1,4 +1,7 @@
 # Burger
+![CircleCI](https://img.shields.io/circleci/build/github/Osotatanekeeni/tats-burger/main)
+
+
 
 This is a simple web app that allows you to create a burger. 
 You can add ingredients to your burger and remove ingredients. 
@@ -17,4 +20,3 @@ The app will then display the burger as you create.
 
 ### *The Burger With Ingredients*
 ![A Complete Burger](./images/selected.png)
-
